@@ -1,5 +1,15 @@
-# asyncrun.extra
-Extra runners for asyncrun to run your command in Tmux/Gnome-terminal panel and Floaterm
+# Preface
+
+Extra runners for asyncrun to run your command in:
+
+- new gnome-terminal window.
+- new gnome-terminal panel.
+- new xterm window.
+- new [floaterm](https://github.com/voldikss/vim-floaterm) window.
+- different tmux panes.
+- the [terminal_help](https://github.com/skywind3000/vim-terminal-help) window.
+
+## Supported Runners
 
 ## Installation
 
@@ -13,7 +23,9 @@ Plug 'skywind3000/asyncrun.extra'
 [asyncrun](https://github.com/skywind3000/asyncrun.vim) version 2.7.8 or latter is required.
 
 
-## Gnome-terminal
+## Available Runners
+
+### Gnome-terminal
 
 Run command in a new `gnome-terminal` window:
 
@@ -29,7 +41,7 @@ Run command in a new gnome-terminal tab:
 
 NOTE: `-pos=external` is an alias of `-pos=gnome` on Linux.
 
-## Xterm
+### Xterm
 
 Run command in a new `xterm` window:
 
@@ -37,7 +49,7 @@ Run command in a new `xterm` window:
 :AsyncRun -mode=term -pos=gnome_tab  ls -la
 ```
 
-## Floaterm
+### Floaterm
 
 Run command in [floaterm](https://github.com/voldikss/vim-floaterm):
 
@@ -52,7 +64,7 @@ With more `floaterm` options:
 :AsyncRun -mode=term -pos=floaterm -focus=0  ls -la
 ```
 
-## Tmux
+### Tmux
 
 Run command in another tmux panel ([vimux](https://github.com/benmills/vimux) is required):
 
@@ -60,7 +72,7 @@ Run command in another tmux panel ([vimux](https://github.com/benmills/vimux) is
 :AsyncRun -mode=term -pos=tmux  ls -la
 ```
 
-## Terminal Help
+### Terminal Help
 
 Run command in the [terminal_help](https://github.com/skywind3000/vim-terminal-help) window:
 
@@ -68,7 +80,7 @@ Run command in the [terminal_help](https://github.com/skywind3000/vim-terminal-h
 :AsyncRun -mode=term -pos=termhelp  ls -la
 ```
 
-## Help required
+## Help Required
 
 - [ ] iterm2 runner
 - [ ] terminal.app runner
