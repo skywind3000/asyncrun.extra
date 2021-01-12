@@ -1,4 +1,4 @@
-# Preface
+# What is it ?
 
 Extra runners for asyncrun to run your command in:
 
@@ -8,8 +8,6 @@ Extra runners for asyncrun to run your command in:
 - new [floaterm](https://github.com/voldikss/vim-floaterm) window.
 - different tmux panes.
 - the [terminal_help](https://github.com/skywind3000/vim-terminal-help) window.
-
-## Supported Runners
 
 ## Installation
 
