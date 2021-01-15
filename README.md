@@ -4,13 +4,13 @@ Extra runners for asyncrun to run your command in `gnome-terminal`, `tmux`, `flo
 
 | Runner | Description |
 |-|-|
-| gnome | run command in a new gnome-terminal window |
-| gnome-tab | run command in a new gnome-terminal tab |
-| xterm | run command in a new xterm window |
-| external | run command in cmd.exe / gnome-terminal / xterm if possible |
-| floaterm | run command in a floaterm window |
-| tmux | run command in another tmux pane |
-| termhelp | run command in the terminal_help window |
+| [gnome](#gnome-terminal) | run command in a new gnome-terminal window |
+| [gnome-tab](#gnome-terminal) | run command in a new gnome-terminal tab |
+| [xterm](#xterm) | run command in a new xterm window |
+| [external](#external) | run command in cmd.exe / gnome-terminal / xterm if possible |
+| [floaterm](#floaterm) | run command in a floaterm window |
+| [tmux](#tmux) | run command in another tmux pane |
+| [termhelp](#termhelp) | run command in the terminal_help window |
 
 ## Installation
 
@@ -78,9 +78,9 @@ The command above runs in cmd.exe:
 
 ![](https://github.com/skywind3000/images/raw/master/p/asynctasks/demo-4.png)
 
-The default `external` runner in asyncrun only works on Windows only, and will do nothing if you are using Linux.
+The default `external` runner in asyncrun works on Windows only, and will do nothing if you are using Linux.
 
-This plugin provide an enhanced `external` runner that could detect what OS currently in used and choose `cmd.exe`, `gnome-terminal` or `xterm` if possible.
+This plugin provide an enhanced version of `external` runner which detect what OS currently in used and choose an appropriate external terminal (`cmd.exe`, `gnome-terminal` or `xterm`) when possible.
 
 ### Floaterm
 
