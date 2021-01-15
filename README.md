@@ -31,11 +31,23 @@ Run command in a new `gnome-terminal` window:
 :AsyncRun -mode=term -pos=gnome  ls -la
 ```
 
+GVim Screencast:
+
+![](https://github.com/skywind3000/images/raw/master/p/asyncrun_extra/p_gnome_gvim.gif)
+
+Terminal Vim:
+
+![](https://github.com/skywind3000/images/raw/master/p/asyncrun_extra/p_gnome.gif)
+
 Run command in a new gnome-terminal tab:
 
 ```VimL
 :AsyncRun -mode=term -pos=gnome_tab  ls -la
 ```
+
+Screencast:
+
+![](https://github.com/skywind3000/images/raw/master/p/asyncrun_extra/p_gnome_tab.gif)
 
 NOTE: `-pos=external` is an alias of `-pos=gnome` on Linux.
 
@@ -46,6 +58,10 @@ Run command in a new `xterm` window:
 ```VimL
 :AsyncRun -mode=term -pos=gnome_tab  ls -la
 ```
+
+Screencast:
+
+![](https://github.com/skywind3000/images/raw/master/p/asyncrun_extra/p_xterm.gif)
 
 ### Floaterm
 
