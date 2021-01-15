@@ -1,6 +1,6 @@
 # What is it ?
 
-Extra runners for asyncrun to run your command in `gnome-terminal`, `tmux`, `floaterm` and more:
+Extra runners for [asyncrun](https://github.com/skywind3000/asyncrun.vim) to run your command in `gnome-terminal`, `tmux`, `floaterm` and more:
 
 | Runner | Description |
 |-|-|
@@ -8,9 +8,9 @@ Extra runners for asyncrun to run your command in `gnome-terminal`, `tmux`, `flo
 | [gnome-tab](#gnome-terminal) | run command in a new gnome-terminal tab |
 | [xterm](#xterm) | run command in a new xterm window |
 | [external](#external) | run command in cmd.exe / gnome-terminal / xterm if possible |
-| [floaterm](#floaterm) | run command in a floaterm window |
+| [floaterm](#floaterm) | run command in a [floaterm](https://github.com/voldikss/vim-floaterm) window |
 | [tmux](#tmux) | run command in another tmux pane |
-| [termhelp](#termhelp) | run command in the terminal_help window |
+| [termhelp](#termhelp) | run command in the [terminal_help](https://github.com/skywind3000/vim-terminal-help) window |
 
 ## Installation
 
