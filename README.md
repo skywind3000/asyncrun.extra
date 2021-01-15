@@ -78,6 +78,10 @@ With more `floaterm` options:
 :AsyncRun -mode=term -pos=floaterm -focus=0  ls -la
 ```
 
+Gif:
+
+![](https://github.com/skywind3000/images/raw/master/p/asyncrun_extra/p_floaterm.gif)
+
 ### Tmux
 
 Run command in another tmux panel ([vimux](https://github.com/benmills/vimux) is required):
@@ -86,6 +90,10 @@ Run command in another tmux panel ([vimux](https://github.com/benmills/vimux) is
 :AsyncRun -mode=term -pos=tmux  ls -la
 ```
 
+Gif:
+
+![](https://github.com/skywind3000/images/raw/master/p/asyncrun_extra/p_tmux.gif)
+
 ### Terminal Help
 
 Run command in the [terminal_help](https://github.com/skywind3000/vim-terminal-help) window:
@@ -93,6 +101,10 @@ Run command in the [terminal_help](https://github.com/skywind3000/vim-terminal-h
 ```VimL
 :AsyncRun -mode=term -pos=termhelp  ls -la
 ```
+
+Gif:
+
+![](https://github.com/skywind3000/images/raw/master/p/asyncrun_extra/p_help.gif)
 
 ## Help Required
 
