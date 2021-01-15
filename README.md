@@ -1,13 +1,16 @@
 # What is it ?
 
-Extra runners for asyncrun to run your command in:
+Extra runners for asyncrun to run your command in `gnome-terminal`, `tmux`, `floaterm` and more:
 
-- new gnome-terminal window.
-- new gnome-terminal panel.
-- new xterm window.
-- new [floaterm](https://github.com/voldikss/vim-floaterm) window.
-- different tmux panes.
-- the [terminal_help](https://github.com/skywind3000/vim-terminal-help) window.
+| Runner | Description |
+|-|-|
+| gnome | run command in a new gnome-terminal window |
+| gnome-tab | run command in a new gnome-terminal tab |
+| xterm | run command in a new xterm window |
+| external | run command in cmd.exe / gnome-terminal / xterm if possible |
+| floaterm | run command in a floaterm window |
+| tmux | run command in another tmux pane |
+| termhelp | run command in the terminal_help window |
 
 ## Installation
 
@@ -62,6 +65,22 @@ Run command in a new `xterm` window:
 Screencast:
 
 ![](https://github.com/skywind3000/images/raw/master/p/asyncrun_extra/p_xterm.gif)
+
+### External
+
+The default `external` runner in asyncrun can run commands in cmd.exe:
+
+```VimL
+:AsyncRun -mode=term -pos=external  echo Hello, World !!
+```
+
+The command above runs in cmd.exe:
+
+![](https://github.com/skywind3000/images/raw/master/p/asynctasks/demo-4.png)
+
+The default `external` runner in asyncrun only works on Windows only, and will do nothing if you are using Linux.
+
+This plugin provide an enhanced `external` runner that could detect what OS currently in used and choose `cmd.exe`, `gnome-terminal` or `xterm` if possible.
 
 ### Floaterm
 
