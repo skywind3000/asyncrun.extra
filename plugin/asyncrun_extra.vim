@@ -120,22 +120,6 @@ function! s:floaterm_run(opts)
 	endif
 	let cmd = 'FloatermNew '
 	let cmd .= ' --wintype=float'
-	if has_key(a:opts, 'reuse')
-		if a:opts.reuse
-			let curr_bufnr = floaterm#curr()
-			if has_key(a:opts, 'silent') && a:opts.silent == 1
-				FloatermHide!
-			endif
-			let cmd = 'cd ' . shellescape(getcwd())
-			call floaterm#terminal#send(curr_bufnr, [cmd])
-			call floaterm#terminal#send(curr_bufnr, [a:opts.cmd])
-			stopinsert
-			if &filetype == 'floaterm' && g:floaterm_autoinsert
-				call floaterm#util#startinsert()
-			endif
-		endif
-		return 0
-	endif
 	if has_key(a:opts, 'position') 
 		let cmd .= ' --position=' . fnameescape(a:opts.position)
 	endif
@@ -178,7 +162,24 @@ function! s:floaterm_close() abort
 	autocmd! close-floaterm-runner
 endfunction
 
+function! s:floaterm_run_2(opts)
+	let curr_bufnr = floaterm#curr()
+	if has_key(a:opts, 'silent') && a:opts.silent == 1
+		FloatermHide!
+	endif
+	let cmd = 'cd ' . shellescape(getcwd())
+	call floaterm#terminal#send(curr_bufnr, [cmd])
+	call floaterm#terminal#send(curr_bufnr, [a:opts.cmd])
+	stopinsert
+	if &filetype == 'floaterm' && g:floaterm_autoinsert
+		call floaterm#util#startinsert()
+	endif
+	return 0
+endfunction
+
+
 let g:asyncrun_runner.floaterm = function('s:floaterm_run')
+let g:asyncrun_runner.floaterm_reuse = function('s:floaterm_run_2')
 
 
 "----------------------------------------------------------------------
