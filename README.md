@@ -59,7 +59,7 @@ NOTE: `-pos=external` is an alias of `-pos=gnome` on Linux.
 Run command in a new `xterm` window:
 
 ```VimL
-:AsyncRun -mode=term -pos=gnome_tab  ls -la
+:AsyncRun -mode=term -pos=xterm  ls -la
 ```
 
 Screencast:
@@ -100,6 +100,8 @@ With more `floaterm` options:
 Gif:
 
 ![](https://github.com/skywind3000/images/raw/master/p/asyncrun_extra/p_floaterm.gif)
+
+**Hint**: try `-pos=floaterm_reuse` if you want to reuse existing floaterm window.
 
 ### Tmux
 
