@@ -134,6 +134,7 @@ function! s:floaterm_run(opts)
 				call floaterm#util#startinsert()
 			endif
 		endif
+		return 0
 	endif
 	if has_key(a:opts, 'position') 
 		let cmd .= ' --position=' . fnameescape(a:opts.position)
