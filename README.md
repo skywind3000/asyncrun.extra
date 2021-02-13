@@ -9,6 +9,7 @@ Extra runners for [asyncrun](https://github.com/skywind3000/asyncrun.vim) to run
 | [xterm](#xterm) | run command in a new xterm window |
 | [external](#external) | run command in cmd.exe / gnome-terminal / xterm if possible |
 | [floaterm](#floaterm) | run command in a [floaterm](https://github.com/voldikss/vim-floaterm) window |
+| [floaterm-reuse](#floaterm) | run command in a reusable [floaterm](https://github.com/voldikss/vim-floaterm) window |
 | [tmux](#tmux) | run command in another tmux pane |
 | [termhelp](#termhelp) | run command in the [terminal_help](https://github.com/skywind3000/vim-terminal-help) window |
 
