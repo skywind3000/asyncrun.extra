@@ -163,16 +163,16 @@ function! s:floaterm_close() abort
 endfunction
 
 function! s:floaterm_run_2(opts)
-    let params = {}
-    if has_key(a:opts, 'position')
-        let params.position = a:opts.position
-    endif
-	let curr_bufnr = floaterm#buflist#curr()
-    if curr_bufnr == -1
-        let curr_bufnr = floaterm#new(v:true, '', {}, params)
-    else
-        call floaterm#terminal#open_existing(curr_bufnr)
-    endif
+    	let params = {}
+    	if has_key(a:opts, 'position')
+        	let params.position = a:opts.position
+    	endif
+		let curr_bufnr = floaterm#buflist#curr()
+    	if curr_bufnr == -1
+        	let curr_bufnr = floaterm#new(v:true, '', {}, params)
+    	else
+        	call floaterm#terminal#open_existing(curr_bufnr)
+    	endif
 
 	if has_key(a:opts, 'silent') && a:opts.silent == 1
 		FloatermHide!
