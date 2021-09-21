@@ -119,7 +119,9 @@ function! s:floaterm_run(opts)
 		return s:errmsg('require asyncrun 2.7.8 or above')
 	endif
 	let cmd = 'FloatermNew '
-	let cmd .= ' --wintype=float'
+	if has_key(a:opts, 'wintype')
+		let cmd .= ' --wintype=' . fnameescape(a:opts.wintype)
+	endif
 	if has_key(a:opts, 'position')
 		let cmd .= ' --position=' . fnameescape(a:opts.position)
 	endif
