@@ -1,3 +1,9 @@
+# Obsoleted
+
+This plugin is obsoleted, because latest asyncrun has included these runners below, and no reason to maintain this project any more.
+
+User should use [asyncrun](https://github.com/skywind3000/asyncrun.vim) directly.
+
 # What is it ?
 
 Extra runners for [asyncrun](https://github.com/skywind3000/asyncrun.vim) to run your command in `gnome-terminal`, `tmux`, `floaterm` and more:
